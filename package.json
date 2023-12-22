@@ -1,0 +1,23 @@
+{
+  "name": "@aierse/between",
+  "version": "1.0.0",
+  "description": "Have you ever written if (val > min && val < max) or if (min < val && val < max)? between can written if (val in between(min, max))",
+  "author": "Aierse <dbsgur2008@gmail.com>",
+  "readmeFilename": "README.md",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aierse/aierse-between"
+  },
+  "bugs": "https://github.com/Aierse/aierse-between/issues",
+  "license": "MIT",
+  "keywords": [
+    "sql",
+    "mysql",
+    "oracle",
+    "between"
+  ]
+}
