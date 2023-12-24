@@ -5,7 +5,7 @@ Have you ever written
 ```js
 if (val > start && val < end)
 // or
-if (start < val && val < end)?
+if (start < val && val < end)
 ```
 
 This library can written
