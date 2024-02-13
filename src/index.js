@@ -8,6 +8,13 @@
 function between(start, end, inclusive = false) {
   if (start > end) [start, end] = [end, start]
 
+  if (inclusive === true) {
+    inclusive = {
+      start: true,
+      end: true,
+    }
+  }
+
   return new Proxy(
     {
       start: start,
@@ -15,10 +22,9 @@ function between(start, end, inclusive = false) {
     },
     {
       has(target, prop) {
-        if (inclusive || (inclusive.start && inclusive.end))
-          return target.start <= prop && prop <= target.end
-        else if (inclusive.start)
-          return target.start <= prop && prop < target.end
+        if (target.start instanceof Date && target.end instanceof Date) prop = new Date(prop)
+
+        if (inclusive.start) return target.start <= prop && prop < target.end
         else if (inclusive.end) return target.start < prop && prop <= target.end
 
         return target.start < prop && prop < target.end

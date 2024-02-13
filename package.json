@@ -1,7 +1,7 @@
 {
   "name": "@aierse/between",
-  "version": "1.0.0",
-  "description": "Have you ever written if (val > min && val < max) or if (min < val && val < max)? between can written if (val in between(min, max))",
+  "version": "1.1.0",
+  "description": "You can written between of MySQL in NodeJS",
   "author": "Aierse <dbsgur2008@gmail.com>",
   "readmeFilename": "README.md",
   "main": "src/index.js",
@@ -18,6 +18,7 @@
     "sql",
     "mysql",
     "oracle",
-    "between"
+    "between",
+    "nodejs"
   ]
 }
